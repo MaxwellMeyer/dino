@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, red, yellow, black);
+  text-align: center;
+}
+.butt {
+  padding: 30px 30px;
+  background: linear-gradient(to right, cyan, magenta);
+  border-radius: 180px;
+  text-shadow: 2px 1px rgb(106, 255, 106);
+}
+.butt:hover {
+  filter: invert(1);
+}
+.butt:active {
+  background-color: magenta;
+}
+.jumbotron {
+  border-radius: 25px;
+  background: linear-gradient(to right, cyan, magenta);
+  text-shadow: 2px 2px rgb(106, 255, 106);
+}
