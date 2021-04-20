@@ -9,9 +9,9 @@ $(document).ready(function () {
     let promise = PokeService.getGif();
     promise.then(
       function (response) {
-        const body = response;
+        const body = JSON.parse(response);
         console.log(body);
-        $(".show").html(body);
+        $(".show").text(body); //
       },
       function (error) {
         $(".show").text(`There was an error processing your request: ${error}`);
