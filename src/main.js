@@ -10,7 +10,12 @@ $(document).ready(function () {
     promise.then(
       function (response) {
         const body = response;
-        $(".show").html(body);
+        $(".show").html(
+          body.moves.sprites.versions.generation -
+            v.black -
+            white.animated.front -
+            shiny
+        );
       },
       function (error) {
         $(".show").text(`There was an error processing your request: ${error}`);
