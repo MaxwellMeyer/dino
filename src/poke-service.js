@@ -3,7 +3,7 @@ export default class PokeService {
     return new Promise(function (resolve, reject) {
       let rand = Math.floor(Math.random() * 100) + 1;
       let request = new XMLHttpRequest();
-      const url = `https://pokeapi.co/api/v2/pokemon/${rand}/`;
+      const url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/${rand}.gif`;
 
       request.onload = function () {
         if (this.status === 200) {
