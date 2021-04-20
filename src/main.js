@@ -11,7 +11,7 @@ $(document).ready(function () {
       function (response) {
         const body = JSON.parse(response);
         console.log(body);
-        $(".show").text(body); //
+        $(".show").html(body["sprites"].front_shiny); //
       },
       function (error) {
         $(".show").text(`There was an error processing your request: ${error}`);
